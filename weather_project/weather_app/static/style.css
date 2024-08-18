@@ -15,8 +15,9 @@ input[type="text"] {
   border-radius: 5px;
 }
 
+
 button {
-  background-color: #4CAF50;
+  background-color:red;
   color: white;
   padding: 5px 10px;
   border: none;
