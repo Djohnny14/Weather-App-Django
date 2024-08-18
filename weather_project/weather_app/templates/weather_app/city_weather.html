@@ -1,5 +1,6 @@
 {% if weather_data %}
-    <h1>{{ weather_data.city }}</h1>
+    <h1>{{ weather_data.city|upper}}</h1>
+    <h3>погода в {{weather_data.time}}</h3>
     <h2>{{ weather_data.temperature }}°C</h2>
 {% endif %}
 

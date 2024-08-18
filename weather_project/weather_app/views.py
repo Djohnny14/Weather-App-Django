@@ -29,7 +29,7 @@ def fetch_weather_and_forecast(city, lang, coordinate_url, forecast_url):
 
     weather_data = {
         'city': city,
-        'time':forecast_response['current']['time'],
+        'time':forecast_response['current']['time'][-5::],
         'temperature': forecast_response['current']['temperature_2m']
     }
 
