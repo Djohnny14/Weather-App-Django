@@ -14,10 +14,14 @@ input[type="text"] {
   border: 1px solid #ccc;
   border-radius: 5px;
 }
-
+select {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
 
 button {
-  background-color:red;
+  background-color:#4CAF50;
   color: white;
   padding: 5px 10px;
   border: none;
