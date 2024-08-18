@@ -21,11 +21,9 @@ def index(request):
 
 def fetch_weather_and_forecast(city, lang, coordinate_url, forecast_url):
     response = requests.get(coordinate_url.format(city,lang)).json()
-    print(coordinate_url.format(city,lang))
     lat, lon = response['results'][0]['latitude'], response['results'][0]['longitude']
-    print(f'Latitude:{lat}; Longitude:{lon}')
+    # print(f'Latitude:{lat}; Longitude:{lon}')
     forecast_response = requests.get(forecast_url.format(lat, lon)).json()
-
 
     weather_data = {
         'city': city,
